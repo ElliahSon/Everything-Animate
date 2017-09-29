@@ -11,3 +11,22 @@
   transform: skew(10deg,10deg);
 }
 
+#matrix {
+	transform: matrix(1, 0.5, 1, 0, 2, 0);
+}
+
+#pseudo:hover {
+	background-color: green;	
+}
+
+@keyframes spin {
+	0%{left: 0px; background-color: blue;}
+	25%{left: 50px; background-color: green;}
+	50%{left: 100px; background-color: red;}
+	75%{left: 150px; background-color: orange;}
+	100%{left: 200px; background-color: yellow;}
+}
+
+#animate {
+	animation: spin 5s infinite;
+}
